@@ -1,0 +1,20 @@
+### Variables
+@baseUrl = http://localhost:8080
+
+### Get All Users
+GET {{baseUrl}}/user
+Accept: application/json
+
+### Get User by ID
+GET {{baseUrl}}/user/1
+Accept: application/json
+
+### Create User
+POST {{baseUrl}}/user/create
+Content-Type: application/json
+
+{
+  "name": "Vikas Gupta",
+  "age": 21,
+  "password":"Test"
+}
